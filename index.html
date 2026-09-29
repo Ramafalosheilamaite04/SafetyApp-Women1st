@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women 1st - You Deserve To Be Safe</title>
+<link rel="stylesheet" href="safety.css">
+</head>
+<body>
+<h1>Women 1st</h1>
+<p class="sub">You Deserve To Be Safe</p>
+
+<div id="setup" class="card">
+<label>Your name</label>
+<input id="myName" type="text" placeholder="">
+
+<label>Next of kin name</label>
+<input id="kinName" type="text" placeholder="">
+
+<label>Next of kin WhatsApp</label>
+<input id="kinNumber" type="tel" placeholder="">
+<small>Type like 27735914468 -and no spaces</small>
+
+<button onclick="saveKin()">Save</button>
+<p id="error"></p>
+</div>
+
+<div id="emergency" class="hidden">
+<div class="card">
+<h3>Ready To Protect You, <span id="showName"></span> 💗</h3>
+<p>Contact: <b id="showKin"></b> - <span id="showPhone"></span></p>
+<button class="edit" onclick="editKin()">Edit Details</button>
+</div>
+
+<div class="panic-card">
+<h2>🚨 EMERGENCY</h2>
+<p id="location">Getting location... please allow location</p>
+<button class="panic" onclick="sendAlert()">Send WhatsApp Alert</button>
+</div>
+
+<div class="card resources">
+<h4>📞 SA Resources</h4>
+<p>GBV Command: 0800 428 428<br>
+Emergency: 10111<br>
+TEARS: *134*7355#</p>
+</div>
+</div>
+
+<script src="safety.js"></script>
+</body>
+</html>
